@@ -1,0 +1,39 @@
+.main {
+}
+.welcome {
+}
+
+.welcome__content {
+}
+.hero {
+    
+    max-width: 448px;
+
+    .main-title{
+        margin-bottom: 13.5px;
+    }
+
+    .main-subtitle{
+        margin-bottom: 14.5px;
+    }
+}
+.main-title {
+    font-size: 64px;
+    font-weight: 900;
+    color: $contextTitle;
+    text-transform: capitalize;
+}
+.main-subtitle {
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.hero__description {
+    font-size: 20px;
+    font-weight: 400;
+}
+.hero__description-text {
+    &:not(:last-child){
+        margin-bottom: 15px;
+    }
+}
