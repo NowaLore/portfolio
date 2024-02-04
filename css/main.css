@@ -211,6 +211,16 @@ body {
   text-transform: capitalize;
 }
 
+.welcome {
+  padding: 72.5px 0;
+}
+
+.welcome__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .hero {
   max-width: 448px;
 }
@@ -241,4 +251,9 @@ body {
 
 .hero__description-text:not(:last-child) {
   margin-bottom: 15px;
+}
+
+.wrapper-avatar {
+  width: 630px;
+  height: 575px;
 }/*# sourceMappingURL=main.css.map */

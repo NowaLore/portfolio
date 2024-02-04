@@ -1,12 +1,16 @@
 .main {
 }
 .welcome {
+    padding: 72.5px 0;
 }
 
 .welcome__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .hero {
-    
+
     max-width: 448px;
 
     .main-title{
@@ -36,4 +40,9 @@
     &:not(:last-child){
         margin-bottom: 15px;
     }
+}
+
+.wrapper-avatar {
+    width: 630px;
+    height: 575px;
 }
