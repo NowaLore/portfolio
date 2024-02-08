@@ -256,4 +256,31 @@ body {
 .wrapper-avatar {
   width: 630px;
   height: 575px;
+  position: relative;
+}
+
+.avatar-part {
+  width: 374px;
+  height: 374px;
+  border-radius: 41% 59% 70% 30%/46% 24% 76% 54%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.avatar-part--img {
+  overflow: hidden;
+  z-index: 3;
+}
+
+.avatar-part--first {
+  background-color: rgba(255, 127, 80, 0.5176470588);
+  z-index: 2;
+  transform: translate(-50%, -50%) rotate(30deg);
+}
+
+.avatar-part--second {
+  background-color: #F0E3CA;
+  transform: translate(-50%, -50%) rotate(-24deg);
 }/*# sourceMappingURL=main.css.map */
