@@ -289,4 +289,9 @@ body {
 .avatar-part--second {
   background-color: #F0E3CA;
   transform: translate(-50%, -50%) rotate(-24deg);
+}
+
+.about-me__picture {
+  width: 100px;
+  height: 100px;
 }/*# sourceMappingURL=main.css.map */
