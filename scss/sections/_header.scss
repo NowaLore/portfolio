@@ -24,4 +24,6 @@
     font-size: 20px;
     font-weight: 700;
     text-transform: capitalize;
+    transition: 0.5s;
+    @include anchor-link-hover($contextTitle)
 }
