@@ -1,0 +1,8 @@
+@mixin anchor-link-hover ($color) {
+    @media (hover:hover) {
+        &:hover {
+            color: $color;
+        }
+        
+    }
+}
