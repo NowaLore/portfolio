@@ -289,4 +289,27 @@ body {
 .avatar-part--second {
   background-color: #F0E3CA;
   transform: translate(-50%, -50%) rotate(-24deg);
+}
+
+.about-me {
+  padding: 64px 0;
+}
+
+.about-me__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+}
+
+.about-me__picture {
+  width: 100px;
+  height: 100px;
+}
+
+.aboute-me__text {
+  font-size: 24px;
+  font-weight: 400;
+  max-width: 904px;
 }/*# sourceMappingURL=main.css.map */
