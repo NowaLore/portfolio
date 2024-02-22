@@ -1,0 +1,42 @@
+.my-skills {
+}
+.my-skills__content {
+}
+.context-title {
+}
+.row-cards {
+    display: flex;
+    column-gap: 16px;
+    justify-content: center;
+}
+.card-skill {
+    max-width: 200px;
+    width: 100%;
+    background-color: $backgroundCards;
+    border-radius: 10px;
+    padding: 61px 0 58px;
+
+    &--html,
+    &--css {
+        .card-skill__picture {
+            width: 113px;
+            height: 128px;
+        }
+    }
+    &--js,
+    &--scss,
+    &--git{
+        .card-skill__picture{
+            width: 128px;
+            height: 128px;
+        }
+    }
+}
+.card-skill__picture {
+    margin: 0 auto 16px;
+}
+
+.card-skill__title {
+    text-align: center;
+    font-size: 32px;
+}

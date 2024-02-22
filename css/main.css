@@ -207,7 +207,7 @@ body {
   color: #F0E3CA;
   font-family: Inconsolata;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: capitalize;
   transition: 0.5s;
 }
@@ -312,4 +312,36 @@ body {
   font-size: 24px;
   font-weight: 400;
   max-width: 904px;
+}
+
+.row-cards {
+  display: flex;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  justify-content: center;
+}
+
+.card-skill {
+  max-width: 200px;
+  width: 100%;
+  background-color: #1F1E1B;
+  border-radius: 10px;
+  padding: 61px 0 58px;
+}
+.card-skill--html .card-skill__picture, .card-skill--css .card-skill__picture {
+  width: 113px;
+  height: 128px;
+}
+.card-skill--js .card-skill__picture, .card-skill--scss .card-skill__picture, .card-skill--git .card-skill__picture {
+  width: 128px;
+  height: 128px;
+}
+
+.card-skill__picture {
+  margin: 0 auto 16px;
+}
+
+.card-skill__title {
+  text-align: center;
+  font-size: 32px;
 }/*# sourceMappingURL=main.css.map */
