@@ -180,6 +180,14 @@ body {
   color: #F0E3CA;
 }
 
+.context-title {
+  font-size: 32px;
+  font-weight: 500;
+  color: #FF7F50;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
 .header {
   padding: 20.5px 0;
 }
@@ -314,6 +322,10 @@ body {
   max-width: 904px;
 }
 
+.my-skills {
+  padding: 64px 0 64px;
+}
+
 .row-cards {
   display: flex;
   -moz-column-gap: 16px;
@@ -336,12 +348,59 @@ body {
   width: 128px;
   height: 128px;
 }
+@media (hover: hover) {
+  .card-skill--html:hover .card-icon {
+    fill: #FC490B;
+  }
+  .card-skill--html:hover .card-skill__title {
+    color: #FC490B;
+  }
+}
+@media (hover: hover) {
+  .card-skill--css:hover .card-icon {
+    fill: #2196F4;
+  }
+  .card-skill--css:hover .card-skill__title {
+    color: #2196F4;
+  }
+}
+@media (hover: hover) {
+  .card-skill--js:hover .card-icon {
+    fill: #FFDF00;
+  }
+  .card-skill--js:hover .card-skill__title {
+    color: #FFDF00;
+  }
+}
+@media (hover: hover) {
+  .card-skill--git:hover .card-icon {
+    fill: #F25234;
+  }
+  .card-skill--git:hover .card-skill__title {
+    color: #F25234;
+  }
+}
+@media (hover: hover) {
+  .card-skill--scss:hover .card-icon {
+    fill: #CA669B;
+  }
+  .card-skill--scss:hover .card-skill__title {
+    color: #CA669B;
+  }
+}
 
 .card-skill__picture {
   margin: 0 auto 16px;
+  display: block;
 }
 
 .card-skill__title {
   text-align: center;
   font-size: 32px;
+  transition: 0.45s;
+}
+
+.card-icon {
+  fill: #F0E3CA;
+  transition: 0.45s;
 }/*# sourceMappingURL=main.css.map */

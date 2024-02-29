@@ -6,3 +6,17 @@
         
     }
 }
+
+@mixin card-skill ($color) {
+    @media (hover:hover) {
+        &:hover {
+            .card-icon {
+                fill: $color;
+            }
+            
+            .card-skill__title {
+                color: $color;
+            } 
+        }
+    }
+}
