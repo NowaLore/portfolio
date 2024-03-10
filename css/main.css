@@ -185,7 +185,6 @@ body {
   font-weight: 500;
   color: #FF7F50;
   text-align: center;
-  margin-bottom: 32px;
 }
 
 .header {
@@ -331,6 +330,9 @@ body {
 .my-skills {
   padding: 64px 0 64px;
 }
+.my-skills .context-title {
+  margin-bottom: 32px;
+}
 
 .row-cards {
   display: flex;
@@ -409,4 +411,72 @@ body {
 .card-icon {
   fill: #F0E3CA;
   transition: 0.45s;
+}
+
+.my-works {
+  padding: 64px 0;
+}
+.my-works .context-title {
+  margin-bottom: 32px;
+}
+
+.project-card {
+  width: 320px;
+  height: 320px;
+  position: relative;
+  overflow: hidden;
+}
+.project-card:hover .project-card__info {
+  top: 0;
+}
+.project-card .context-title {
+  margin-bottom: 16px;
+}
+
+.project-card__info {
+  background-color: #21201D;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40.5px 0;
+  position: absolute;
+  top: -100%;
+  width: 100%;
+  transition: 0.45s;
+}
+
+.project-card__info-top {
+  border-bottom: 1px solid #FF7F50;
+  width: 200px;
+  text-align: center;
+  padding-bottom: 16px;
+}
+
+.project-card__stak {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.project-card__info-bottom {
+  width: 219px;
+  padding-top: 16px;
+}
+
+.project-card__description {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.project-card__wrapper-link {
+  text-align: center;
+}
+
+.project-card__see-more {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #32312E;
+  font-size: 14px;
+  font-weight: 400;
+  color: #F0E3CA;
 }/*# sourceMappingURL=main.css.map */
