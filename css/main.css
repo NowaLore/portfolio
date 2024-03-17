@@ -327,6 +327,61 @@ body {
   max-width: 904px;
 }
 
+.footer .context-title {
+  margin-bottom: 16px;
+  text-align: left;
+}
+.footer .logo {
+  margin-bottom: 16px;
+  max-width: 166px;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 64px;
+       column-gap: 64px;
+  padding: 64px 0;
+}
+
+.footer__description {
+  max-width: 219px;
+}
+
+.footer__description-text {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.contacts-list {
+  display: flex;
+  -moz-column-gap: 48px;
+       column-gap: 48px;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+
+.contact-link__image {
+  width: 32px;
+  height: 32px;
+  fill: #F0E3CA;
+}
+
+.contact-link__text {
+  color: #FF7F50;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.contacts-sublist .contacts-list__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
 .my-skills {
   padding: 64px 0 64px;
 }
