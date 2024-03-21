@@ -1,0 +1,60 @@
+.footer {
+    .context-title {
+        margin-bottom: 16px;
+        text-align: left;
+    }
+    .logo {
+        margin-bottom: 16px;
+        max-width: 166px;
+    }
+}
+
+.footer__content {
+    display: flex;
+    justify-content: center;
+    column-gap: 64px;
+    padding: 64px 0;
+}
+.footer__description {
+    max-width: 219px;
+}
+.footer__description-text {
+    font-size: 20px;
+    font-weight: 400;
+}
+.contacts {
+}
+.contacts-list {
+    display: flex;
+    column-gap: 48px;
+}
+.contacts-list__item {
+
+}
+.contact-link {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    transition: 0.45s;
+    @include contact-link__text($contextTitle,$colorText);
+}
+.contact-link__image {
+    width: 32px;
+    height: 32px;
+    fill:$colorText;
+    transition: 0.45s;
+}
+.contact-link__text {
+    color: $contextTitle;
+    font-size: 24px;
+    font-weight: 400;
+    transition: 0.45s;
+}
+.contacts-list__wrapper-item {
+}
+.contacts-sublist {
+    .contacts-list__item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+}
+

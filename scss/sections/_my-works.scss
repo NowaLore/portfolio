@@ -1,0 +1,67 @@
+.my-works {
+    padding: 64px 0;
+    .context-title {
+        margin-bottom: 32px;
+    }
+}
+.my-works__content {
+}
+.project-card {
+    width: 320px;
+    height: 320px;
+    position: relative;
+    overflow: hidden;
+    &:hover {
+        .project-card__info {
+            top: 0;
+        }
+    }
+
+    .context-title {
+        margin-bottom: 16px;
+    }
+}
+.project-card__picture {
+}
+.project-card__info {
+    background-color: $myworksColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40.5px 0;
+    position: absolute;
+    top: -100%;
+    width: 100%;
+    transition: 0.45s;
+}
+.project-card__info-top {
+    border-bottom: 1px solid $contextTitle;
+    width: 200px;
+    text-align: center;
+    padding-bottom: 16px;
+}
+.project-card__stak {
+    font-size: 16px;
+    font-weight: 500;
+}
+.project-card__info-bottom {
+    width: 219px;
+    padding-top: 16px;
+}
+.project-card__description {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+.project-card__wrapper-link {
+    text-align: center;
+}
+
+.project-card__see-more {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: $seemoreColor;
+    font-size: 14px;
+    font-weight: 400;
+    color: $colorText;
+}

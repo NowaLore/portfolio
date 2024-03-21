@@ -1,0 +1,74 @@
+.my-skills {
+    padding: 64px 0 64px;
+    .context-title {
+        margin-bottom: 32px;
+    }
+}
+.my-skills__content {
+}
+.context-title {
+
+}
+.row-cards {
+    display: flex;
+    column-gap: 16px;
+    justify-content: center;
+}
+.card-skill {
+    max-width: 200px;
+    width: 100%;
+    background-color: $backgroundCards;
+    border-radius: 10px;
+    padding: 61px 0 58px;
+
+    &--html,
+    &--css {
+        .card-skill__picture {
+            width: 113px;
+            height: 128px;
+        }
+    }
+    &--js,
+    &--scss,
+    &--git{
+        .card-skill__picture{
+            width: 128px;
+            height: 128px;
+        }
+    }
+
+    &--html {
+        @include card-skill($htmlColor);
+    }
+    
+    &--css {
+        @include card-skill($cssColor);
+    }
+
+    &--js {
+        @include card-skill($jsColor);
+    }
+
+    &--git {
+        @include card-skill($gitColor);
+    }
+
+    &--scss {
+        @include card-skill($scssColor);
+    }
+}
+.card-skill__picture {
+    margin: 0 auto 16px;
+    display: block;
+}
+
+.card-skill__title {
+    text-align: center;
+    font-size: 32px;
+    transition: 0.45s;
+}
+
+.card-icon {
+    fill: #F0E3CA;
+    transition: 0.45s;
+}
