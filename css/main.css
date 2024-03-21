@@ -190,6 +190,11 @@ body {
 .header {
   padding: 20.5px 0;
 }
+@media (max-width: 768px) {
+  .header {
+    padding: 16px 0;
+  }
+}
 .header__content {
   display: flex;
   justify-content: space-between;
@@ -198,10 +203,19 @@ body {
   margin: 0 auto;
   width: 100%;
 }
-
-.logo {
+@media (max-width: 768px) {
+  .header__content {
+    flex-direction: column;
+  }
+}
+.header .logo {
   max-width: 146px;
   display: inline-block;
+}
+@media (max-width: 768px) {
+  .header .logo {
+    margin-bottom: 23.5px;
+  }
 }
 
 .navigation__list {
