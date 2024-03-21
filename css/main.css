@@ -364,18 +364,29 @@ body {
   align-items: center;
   -moz-column-gap: 16px;
        column-gap: 16px;
+  transition: 0.45s;
+}
+@media (hover: hover) {
+  .contact-link:hover .contact-link__image {
+    fill: #FF7F50;
+  }
+  .contact-link:hover .contact-link__text {
+    color: #F0E3CA;
+  }
 }
 
 .contact-link__image {
   width: 32px;
   height: 32px;
   fill: #F0E3CA;
+  transition: 0.45s;
 }
 
 .contact-link__text {
   color: #FF7F50;
   font-size: 24px;
   font-weight: 400;
+  transition: 0.45s;
 }
 
 .contacts-sublist .contacts-list__item:not(:last-child) {

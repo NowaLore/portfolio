@@ -20,3 +20,16 @@
         }
     }
 }
+
+@mixin contact-link__text ($colorIcon,$colorTitle){
+    @media (hover:hover) {
+        &:hover {
+            .contact-link__image {
+                fill: $colorIcon;
+            }
+            .contact-link__text{
+                color: $colorTitle;
+            }
+        }
+    }
+}

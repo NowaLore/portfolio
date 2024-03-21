@@ -35,16 +35,20 @@
     display: flex;
     align-items: center;
     column-gap: 16px;
+    transition: 0.45s;
+    @include contact-link__text($contextTitle,$colorText);
 }
 .contact-link__image {
     width: 32px;
     height: 32px;
     fill:$colorText;
+    transition: 0.45s;
 }
 .contact-link__text {
     color: $contextTitle;
     font-size: 24px;
     font-weight: 400;
+    transition: 0.45s;
 }
 .contacts-list__wrapper-item {
 }
