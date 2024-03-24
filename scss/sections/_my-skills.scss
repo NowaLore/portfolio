@@ -10,8 +10,9 @@
 
 }
 .row-cards {
+    flex-wrap: wrap;
     display: flex;
-    column-gap: 16px;
+    gap: 16px;
     justify-content: center;
 }
 .card-skill {

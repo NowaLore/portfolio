@@ -441,9 +441,9 @@ body {
 }
 
 .row-cards {
+  flex-wrap: wrap;
   display: flex;
-  -moz-column-gap: 16px;
-       column-gap: 16px;
+  gap: 16px;
   justify-content: center;
 }
 
