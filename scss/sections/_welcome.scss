@@ -2,6 +2,14 @@
 }
 .welcome {
     padding: 72.5px 0;
+    
+    @media(max-width: 1100px) {
+        padding: 128px 0;
+        .welcome__content {
+            flex-direction: column;
+            row-gap: 64px;
+        }
+    }
 }
 
 .welcome__content {
@@ -13,13 +21,19 @@
 
     max-width: 448px;
 
-
+    
     .main-title{
         margin-bottom: 13.5px;
+        @media(max-width:1100px) {
+            margin-bottom: 9px;
+        }
     }
 
     .main-subtitle{
         margin-bottom: 14.5px;
+        @media(max-width: 1100px) {
+            margin-bottom: 17px;
+        }
     }
 }
 .main-title {
