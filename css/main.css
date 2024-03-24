@@ -241,6 +241,15 @@ body {
 .welcome {
   padding: 72.5px 0;
 }
+@media (max-width: 1100px) {
+  .welcome {
+    padding: 128px 0;
+  }
+  .welcome .welcome__content {
+    flex-direction: column;
+    row-gap: 64px;
+  }
+}
 
 .welcome__content {
   display: flex;
@@ -254,8 +263,18 @@ body {
 .hero .main-title {
   margin-bottom: 13.5px;
 }
+@media (max-width: 1100px) {
+  .hero .main-title {
+    margin-bottom: 9px;
+  }
+}
 .hero .main-subtitle {
   margin-bottom: 14.5px;
+}
+@media (max-width: 1100px) {
+  .hero .main-subtitle {
+    margin-bottom: 17px;
+  }
 }
 
 .main-title {
