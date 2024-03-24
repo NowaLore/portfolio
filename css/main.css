@@ -348,8 +348,15 @@ body {
   -moz-column-gap: 32px;
        column-gap: 32px;
 }
+@media (max-width: 768px) {
+  .about-me__content {
+    flex-direction: column;
+    row-gap: 32px;
+  }
+}
 
 .about-me__picture {
+  flex-shrink: 0;
   width: 100px;
   height: 100px;
 }
