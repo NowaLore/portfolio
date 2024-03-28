@@ -2,14 +2,28 @@
     .context-title {
         margin-bottom: 16px;
         text-align: left;
+        @media(max-width:768px) {
+            font-weight: 900;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-align: center;
+        }
     }
     .logo {
+        display: inline-block;
         margin-bottom: 16px;
         max-width: 166px;
+        // @media(max-width:768px) {
+            // margin: 0 auto;
+        // }
     }
 }
 
 .footer__content {
+    @media(max-width:768px) {
+        flex-direction: column;
+        row-gap: 64px;
+        align-items: center;
+    }
     display: flex;
     justify-content: center;
     column-gap: 64px;
@@ -17,10 +31,17 @@
 }
 .footer__description {
     max-width: 219px;
+    @media(max-width:768px) {
+        max-width: 350px;
+        text-align: center;
+    }
 }
 .footer__description-text {
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 400; 
+    @media(max-width:768px) {
+        text-align: left;
+    }
 }
 .contacts {
 }
