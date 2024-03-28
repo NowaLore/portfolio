@@ -371,6 +371,13 @@ body {
   margin-bottom: 16px;
   text-align: left;
 }
+@media (max-width: 768px) {
+  .footer .context-title {
+    font-weight: 900;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    text-align: center;
+  }
+}
 .footer .logo {
   display: inline-block;
   margin-bottom: 16px;
@@ -384,14 +391,32 @@ body {
        column-gap: 64px;
   padding: 64px 0;
 }
+@media (max-width: 768px) {
+  .footer__content {
+    flex-direction: column;
+    row-gap: 64px;
+    align-items: center;
+  }
+}
 
 .footer__description {
   max-width: 219px;
+}
+@media (max-width: 768px) {
+  .footer__description {
+    max-width: 350px;
+    text-align: center;
+  }
 }
 
 .footer__description-text {
   font-size: 20px;
   font-weight: 400;
+}
+@media (max-width: 768px) {
+  .footer__description-text {
+    text-align: left;
+  }
 }
 
 .contacts-list {
