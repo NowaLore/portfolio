@@ -16,6 +16,9 @@
         @media(max-width: 768px) {
             flex-direction: column;
         }
+        @media(max-width: 600px) {
+            flex-direction: row;
+        }
     }
 
     .logo {
@@ -25,7 +28,14 @@
         @media(max-width: 768px){
             margin-bottom: 23.5px;
         }
-
+        @media(max-width: 600px){
+            margin-bottom: 0;
+        }
+    }
+}
+.navigation {
+    @media(max-width: 600px) {
+        display: none;
     }
 }
 .navigation__list {
