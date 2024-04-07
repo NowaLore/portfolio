@@ -27,6 +27,10 @@
         @media(max-width:1100px) {
             margin-bottom: 9px;
         }
+
+        @media (max-width: 768px) {
+            margin-bottom: 16px;
+        }
     }
 
     .main-subtitle{
@@ -41,15 +45,27 @@
     font-weight: 900;
     color: $contextTitle;
     text-transform: capitalize;
+
+    @media (max-width: 768px) {
+        font-size: 40px;
+    }
 }
 .main-subtitle {
     font-size: 40px;
     font-weight: 600;
     text-transform: capitalize;
+
+    @media (max-width: 768px) {
+        font-size: 32px;
+    }
 }
 .hero__description {
     font-size: 20px;
     font-weight: 400;
+
+    @media (max-width: 768px) {
+        font-size: 24px;
+    }
 }
 .hero__description-text {
     &:not(:last-child){
