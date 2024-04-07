@@ -30,18 +30,40 @@
         }
         @media(max-width: 600px){
             margin-bottom: 0;
+            z-index: 2;
         }
     }
 }
 .navigation {
     @media(max-width: 600px) {
-        display: none;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(27, 26, 23, 0.9);
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        transform: translateY(100%);
     }
 }
+
 .navigation__list {
     display: flex;
-    column-gap: 64px;
+    gap: 64px;
+    
+    @media (max-width: 600px) {
+        flex-direction: column;
+    }
 }
+
+.navigation__list-item {
+    @media (max-width: 600px) {
+        text-align: center;
+    }
+}
+
 .anchor-link {
     color: #F0E3CA;
     font-family: Inconsolata;
