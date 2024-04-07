@@ -394,12 +394,8 @@ body {
   width: 630px;
   height: 575px;
   position: relative;
-}
-.wrapper-avatar__code {
-  width: auto;
-  height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
+  background-image: url(../../img/welcome/bg-avatar-desktop.png);
+  background-repeat: no-repeat;
 }
 
 .avatar-part {

@@ -77,12 +77,8 @@
     width: 630px;
     height: 575px;
     position: relative;
-
-    &__code {
-        width: auto;
-        height: auto;
-        object-fit: contain;
-    }
+    background-image: url(../../img/welcome/bg-avatar-desktop.png);
+    background-repeat: no-repeat;
 }
 
 .avatar-part {
