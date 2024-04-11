@@ -364,6 +364,12 @@ body {
     font-size: 40px;
   }
 }
+@media (max-width: 460px) {
+  .main-title {
+    font-size: 30px;
+    text-align: center;
+  }
+}
 
 .main-subtitle {
   font-size: 40px;
@@ -375,6 +381,12 @@ body {
     font-size: 32px;
   }
 }
+@media (max-width: 460px) {
+  .main-subtitle {
+    font-size: 24px;
+    text-align: center;
+  }
+}
 
 .hero__description {
   font-size: 20px;
@@ -383,6 +395,12 @@ body {
 @media (max-width: 768px) {
   .hero__description {
     font-size: 24px;
+  }
+}
+@media (max-width: 460px) {
+  .hero__description {
+    font-size: 18px;
+    text-align: center;
   }
 }
 
@@ -404,6 +422,13 @@ body {
     height: 430px;
   }
 }
+@media (max-width: 460px) {
+  .wrapper-avatar {
+    width: 290px;
+    height: 320px;
+    background-size: contain;
+  }
+}
 
 .avatar-part {
   width: 374px;
@@ -418,6 +443,12 @@ body {
   .avatar-part {
     width: 278px;
     height: 276px;
+  }
+}
+@media (max-width: 460px) {
+  .avatar-part {
+    width: 190px;
+    height: 190px;
   }
 }
 
