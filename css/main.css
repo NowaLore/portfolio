@@ -497,6 +497,11 @@ body {
   font-weight: 400;
   max-width: 904px;
 }
+@media (max-width: 460px) {
+  .aboute-me__text {
+    font-size: 18px;
+  }
+}
 
 .footer .context-title {
   margin-bottom: 16px;
