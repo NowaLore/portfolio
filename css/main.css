@@ -397,6 +397,13 @@ body {
   background-image: url(../../img/welcome/bg-avatar-desktop.png);
   background-repeat: no-repeat;
 }
+@media (max-width: 768px) {
+  .wrapper-avatar {
+    background-image: url(../../img/mobile-code.png);
+    width: 413px;
+    height: 430px;
+  }
+}
 
 .avatar-part {
   width: 374px;
@@ -406,6 +413,12 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+@media (max-width: 768px) {
+  .avatar-part {
+    width: 278px;
+    height: 276px;
+  }
 }
 
 .avatar-part--img {
