@@ -560,6 +560,12 @@ body {
   -moz-column-gap: 48px;
        column-gap: 48px;
 }
+@media (max-width: 768px) {
+  .contacts-list {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
 
 .contact-link {
   display: flex;
