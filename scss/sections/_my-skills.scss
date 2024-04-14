@@ -22,11 +22,23 @@
     border-radius: 10px;
     padding: 61px 0 58px;
 
+    @media (max-width: 786px) {
+        display: flex;
+        max-width: 285px;
+        padding: 14px 32px;
+        gap: 16px;
+    }
+
     &--html,
     &--css {
         .card-skill__picture {
             width: 113px;
             height: 128px;
+
+            @media (max-width: 786px) {
+            width: 32px;
+            height: 32px;
+            }
         }
     }
     &--js,
@@ -35,6 +47,11 @@
         .card-skill__picture{
             width: 128px;
             height: 128px;
+
+            @media (max-width: 786px) {
+            width: 32px;
+            height: 32px;
+            }
         }
     }
 
@@ -61,12 +78,21 @@
 .card-skill__picture {
     margin: 0 auto 16px;
     display: block;
+
+    @media (max-width: 786px) {
+    margin: 0;
+    }
 }
 
 .card-skill__title {
     text-align: center;
     font-size: 32px;
     transition: 0.45s;
+
+    @media (max-width: 786px) {
+        font-weight: 500;
+        font-size: 24px;
+    }
 }
 
 .card-icon {
