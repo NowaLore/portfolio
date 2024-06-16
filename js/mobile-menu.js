@@ -11,9 +11,13 @@ const anchorLinks = document.querySelectorAll("[data-anchor]");
 burgerButton.addEventListener("click", function () {
     menu.classList.toggle("open");
 });
-
-anchorLinks.forEach((link) => {
-    link.addEventListener("click", () => {
-        menu.classList.remove("open");
-    })
+menu.addEventListener("click", function (event) {
+if (event.target.closest("[data-anchor]")) {
+    menu.classList.remove("open");
+}
 });
+// anchorLinks.forEach((link) => {
+//     link.addEventListener("click", () => {
+//         menu.classList.remove("open");
+//     })
+// });
