@@ -9,6 +9,7 @@
         background-color: $colorText;
         display: inline-block;
         position: relative;
+        transition: 0.3s 0s;
 
         &::before,
         &::after{
@@ -22,14 +23,33 @@
         }
         &::before {
             top: -10px;
+            transition: transform 0.3s, top 0.3s 0.3s;
         }
         &::after {
             bottom: -10px; 
+            transition: transform 0.3s, bottom 0.3s 0.3s;
         }
     }
     @media(max-width: 600px) {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+}
+
+.burger.active {
+    .burger__line {
+        background-color: transparent;
+        transition: 0.3s 0s;
+        &::before {
+            top: 0;
+            transition: top 0.3s, transform 0.3s 0.3s;
+            transform: rotate(45deg);
+        }
+        &::after {
+            bottom: 0;
+            transition: bottom 0.3s, transform 0.3s 0.3s;
+            transform: rotate(-45deg);
+        }
     }
 }
