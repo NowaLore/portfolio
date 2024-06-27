@@ -814,4 +814,45 @@ body {
   font-size: 14px;
   font-weight: 400;
   color: #F0E3CA;
+}
+
+.context-title {
+  margin-bottom: 32px;
+}
+
+.slider {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slider__content {
+  overflow: hidden;
+}
+
+.slider__track {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+
+.slider__slide {
+  background-color: darkred;
+  height: 210px;
+  min-width: 100%;
+  border-radius: 20px;
+}
+
+.slider__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slider__arrow--left {
+  left: -45px;
+}
+
+.slider__arrow--right {
+  right: -45px;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,43 @@
+.reviews {
+}
+
+.reviews__content {
+}
+.context-title {
+    margin-bottom: 32px;
+}
+.slider {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+.slider__content {
+    overflow: hidden;
+}
+.slider__track {
+    display: flex;
+    column-gap: 10px;
+}
+.slider__slide {
+    background-color: darkred;
+    height: 210px;
+    min-width:100%;
+    border-radius: 20px;
+}
+.slider__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.slider__arrow--left {
+    left: -45px;
+}
+.slider__arrow--right {
+    right: -45px;
+}
+.list-control {
+}
+.list-control__item {
+}
+.list-control__button {
+}
