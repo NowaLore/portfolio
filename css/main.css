@@ -855,4 +855,20 @@ body {
 
 .slider__arrow--right {
   right: -45px;
+}
+
+.list-control {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.list-control__button {
+  width: 15px;
+  height: 6px;
+  background-color: aliceblue;
+  border-radius: 50px;
 }/*# sourceMappingURL=main.css.map */
