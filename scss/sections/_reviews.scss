@@ -24,11 +24,25 @@
     min-width:100%;
     border-radius: 20px;
 }
+
 .slider__arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    
+    &:hover {
+        .slider-arrow__image {
+            fill: $contextTitle;
+        }
+    }
 }
+.slider-arrow__image {
+    fill: #f0e3ca;
+    transition: 0.4s;
+}
+
 .slider__arrow--left {
     left: -45px;
 }
@@ -49,4 +63,9 @@
     height: 6px;
     background-color: aliceblue;
     border-radius: 50px;
+    transition: 0.4s;
+
+    &:hover {
+        transform: scaleX(1.2);
+    }
 }
