@@ -834,6 +834,7 @@ body {
   display: flex;
   -moz-column-gap: 10px;
        column-gap: 10px;
+  transition: 0.4s;
 }
 
 .slider__slide {

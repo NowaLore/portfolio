@@ -17,6 +17,7 @@
 .slider__track {
     display: flex;
     column-gap: 10px;
+    transition: 0.4s;
 }
 .slider__slide {
     background-color: darkred;
