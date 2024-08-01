@@ -6,18 +6,23 @@ const slideGap = parseFloat(getComputedStyle(sliderTrack).columnGap);
 const currentDistance = slideWidth + slideGap;
 let counterSlide = 0;
 
+const sliderMove = () => {
+    sliderTrack.style.transform = `translateX(-${currentDistance * counterSlide}px)`;
+}
+
 const hendlersEvents = (event) => {
     const isArrowRight = event.target.closest("[data-arrow-right]");
     const isArrowLeft = event.target.closest("[data-arrow-left]");
     
     if (isArrowRight) {
-        if (counterSlide < slides.length - 1) {
-            counterSlide++;
-        } else {
-            counterSlide = 0;
-        }
-        sliderTrack.style.transform = `translateX(-${currentDistance * counterSlide}px)`;
+        counterSlide = (counterSlide < slides.length - 1) ? counterSlide + 1 : 0;
     }
+
+    if (isArrowLeft) {
+        counterSlide = (counterSlide > 0) ? counterSlide - 1 : slides.length - 1;
+    }
+
+    sliderMove();
 }
 
 slider.addEventListener("click", hendlersEvents);
