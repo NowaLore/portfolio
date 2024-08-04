@@ -886,4 +886,8 @@ body {
 }
 .list-control__button:hover {
   transform: scaleX(1.2);
+}
+.list-control__button.active {
+  transform: scaleX(1.2);
+  background-color: #FF7F50;
 }/*# sourceMappingURL=main.css.map */

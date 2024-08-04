@@ -69,4 +69,9 @@
     &:hover {
         transform: scaleX(1.2);
     }
+
+    &.active {
+        transform: scaleX(1.2);
+        background-color: $contextTitle;
+    }
 }
