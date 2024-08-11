@@ -43,12 +43,12 @@ const hendlersEvents = (event) => {
     sliderMove();
 }
 
-const hendlerStart = (event) => {
-    startPoint = event.clientX;
+const hendlerStart = (e) => {
+    startPoint =  e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
 }
 
-const hendlerEnd = (event) => {
-    endPoint = event.clientX;
+const hendlerEnd = (e) => {
+    endPoint = e.type.includes('mouse') ? e.clientX : e.changedTouches[0].clientX;
     hendlerMouseMove();
 }
 
@@ -75,5 +75,5 @@ const choiceOfDirection = (direction) => {
 slider.addEventListener("click", hendlersEvents);
 slider.addEventListener("mousedown", hendlerStart);
 slider.addEventListener("mouseup", hendlerEnd);
-
-// 1.Свайп для тачскринов
+slider.addEventListener("touchstart", hendlerStart);
+slider.addEventListener("touchend", hendlerEnd);
