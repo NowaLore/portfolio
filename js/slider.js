@@ -33,11 +33,11 @@ const hendlersEvents = (event) => {
     }
     
     if (isArrowRight) {
-        counterSlide = (counterSlide < slides.length - 1) ? counterSlide + 1 : 0;
+        choiceOfDirection("right");
     }
 
     if (isArrowLeft) {
-        counterSlide = (counterSlide > 0) ? counterSlide - 1 : slides.length - 1;
+        choiceOfDirection();
     }
 
     sliderMove();
@@ -56,17 +56,24 @@ const hendlerMouseMove = () => {
     const currentDiff = startPoint - endPoint;
     if (Math.abs(currentDiff) > minMove) {
         if (currentDiff > 0) {
-            counterSlide++;
+            choiceOfDirection("right");
         } else {
-            counterSlide--;
+            choiceOfDirection();
         }
     }
     sliderMove()
+}
+
+const choiceOfDirection = (direction) => {
+    if (direction === "right") {
+        counterSlide = (counterSlide < slides.length - 1) ? counterSlide + 1 : 0;
+        return;
+    }
+    counterSlide = (counterSlide > 0) ? counterSlide - 1 : slides.length - 1;
 }
 
 slider.addEventListener("click", hendlersEvents);
 slider.addEventListener("mousedown", hendlerStart);
 slider.addEventListener("mouseup", hendlerEnd);
 
-// 1.Отрефакторить выбор направления (написать ограничение - бесконечность)
-// 2.Свайп для тачскринов
+// 1.Свайп для тачскринов
