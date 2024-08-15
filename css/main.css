@@ -838,9 +838,40 @@ body {
 }
 
 .slider__slide {
-  background-color: darkred;
+  background-color: #1F1E1B;
   min-width: 100%;
   border-radius: 20px;
+  padding: 10px;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.slider__reviewer-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  margin-bottom: 15px;
+}
+
+.slider__wrapper-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.slider__reviewer-name {
+  font-size: 24px;
+  color: #FF7F50;
+  font-weight: 600;
+}
+
+.slider__text {
+  text-align: center;
 }
 
 .slider__arrow {
