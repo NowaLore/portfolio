@@ -821,9 +821,14 @@ body {
 }
 
 .slider {
-  max-width: 800px;
+  width: 80%;
   margin: 0 auto;
   position: relative;
+}
+@media (max-width: 425px) {
+  .slider {
+    width: 100%;
+  }
 }
 
 .slider__content {
@@ -883,6 +888,11 @@ body {
 }
 .slider__arrow:hover .slider-arrow__image {
   fill: #FF7F50;
+}
+@media (max-width: 768px) {
+  .slider__arrow {
+    display: none;
+  }
 }
 
 .slider-arrow__image {
