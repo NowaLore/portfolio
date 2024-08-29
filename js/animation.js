@@ -52,3 +52,41 @@ gsap.from('[data-project-card]',{
         toggleActions: 'play none none reverse',
     }
 })
+
+function paralax() {
+    const preview = document.querySelector('#welcome');
+    const initialX = preview.offsetLeft + preview.offsetWidth / 2;
+    const initialY = preview.offsetTop + preview.offsetHeight / 2;
+
+    document.addEventListener('mousemove', function(event){
+    const mouseX = event.clientX - initialX;
+    const mouseY = event.clientY - initialY;
+
+    gsap.to(
+        '#avatarImage', 
+        {
+        x: mouseX * 0.01, 
+        y: mouseY * 0.01, 
+        ease: 'power2.out' ,
+        },);
+
+    gsap.to(
+        '#avatarFirstPart', 
+        {
+        x: -mouseX * 0.0125, 
+        y: mouseY * 0.0125, 
+        ease: 'power2.out' ,
+        },);
+
+    gsap.to(
+        '#avatarSecondPart', 
+        {
+        x: mouseX * 0.015, 
+        y: -mouseY * 0.015, 
+        ease: 'power2.out' ,
+        },);
+    }) 
+
+}
+
+paralax()
