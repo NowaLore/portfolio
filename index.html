@@ -14,6 +14,7 @@
       <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer="defer"></script>
       <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"  defer="defer"></script>
       <script src="./js/animation.js" defer="defer"></script>
+      <script src="./js/card.js" defer="defer"></script>
    </head>
    <body>
       <svg display = 'none'>
@@ -146,9 +147,9 @@
                   <h6 class="context-title">
 My Skills
                   </h6>
-                  <div class="row-cards">
+                  <div class="row-cards" id="row-card">
 
-                     <button class="card-skill card-skill--html" data-skill-card>
+                     <article class="card-skill card-skill--html" data-skill-card>
                         <span class="card-skill__front">
                            <span class="card-skill__picture">
                               <svg class="html-icon card-icon">
@@ -160,11 +161,11 @@ My Skills
                            </span>
                         </span>
                         <span class="card-skill__back">
-
+                           <button data-btn-close></button>
                         </span>
-                     </button>
+                     </article>
                      
-                     <button class="card-skill card-skill--css" data-skill-card>
+                     <article class="card-skill card-skill--css" data-skill-card>
                         <span class="card-skill__front">
                            <span class="card-skill__picture">
                               <svg class="css-icon card-icon">
@@ -176,11 +177,11 @@ My Skills
                            </span>
                         </span>
                         <span class="card-skill__back">
-
+                           <button data-btn-close></button>
                         </span>
-                     </button>
+                     </article>
 
-                     <button class="card-skill card-skill--js" data-skill-card>
+                     <article class="card-skill card-skill--js" data-skill-card>
                         <span class="card-skill__front">
                            <span class="card-skill__picture">
                               <svg class="js-icon card-icon">
@@ -192,11 +193,11 @@ My Skills
                            </span>
                         </span>
                         <span class="card-skill__back">
-
+                           <button data-btn-close></button>
                         </span>
-                     </button>
+                     </article>
 
-                     <button class="card-skill card-skill--scss" data-skill-card>
+                     <article class="card-skill card-skill--scss" data-skill-card>
                         <span class="card-skill__front">
                            <span class="card-skill__picture">
                               <svg class="scss-icon card-icon">
@@ -208,11 +209,11 @@ My Skills
                            </span>
                         </span>
                         <span class="card-skill__back">
-
+                           <button data-btn-close></button>
                         </span>
-                     </button>
+                     </article>
 
-                     <button class="card-skill card-skill--git" data-skill-card>
+                     <article class="card-skill card-skill--git" data-skill-card>
                         <span class="card-skill__front">
                            <span class="card-skill__picture">
                               <svg class="git-icon card-icon">
@@ -224,9 +225,9 @@ My Skills
                            </span>
                         </span>
                         <span class="card-skill__back">
-                           
+                           <button data-btn-close></button>
                         </span>
-                     </button>
+                     </article>
 
                   </div>
                </div>

@@ -680,6 +680,11 @@ body {
   transform: perspective(600px) rotateY(-180deg);
   border-radius: 10px;
 }
+.card-skill [data-btn-close] {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+}
 .card-skill--html .card-skill__picture, .card-skill--css .card-skill__picture {
   width: 113px;
   height: 128px;
