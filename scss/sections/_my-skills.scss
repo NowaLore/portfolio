@@ -22,10 +22,8 @@
     position: relative;
 
     @media (max-width: 786px) {
-        display: flex;
         max-width: 285px;
-        padding: 14px 32px;
-        gap: 16px;
+        height: 60px;
     }
 
     &__front, &__back {
@@ -44,6 +42,13 @@
         border-radius: 10px;
         padding: 61px 0 58px;
         transform: perspective(600px) rotateY(0deg);
+
+        @media (max-width: 786px) {
+            display: flex;
+            padding: 14px 32px;
+            gap: 16px;
+            text-align: center;
+        }
     }
 
     &__back {
@@ -63,7 +68,6 @@
     [data-btn-close] {
         width: 20px;
         height: 20px;
-        background-color: red;
         position: absolute;
         top: 15px;
         right: 15px;
@@ -143,6 +147,7 @@
     z-index: 3;
     max-width: 600px;
     width: 95%;
+    height: 300px;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -170,4 +175,12 @@
     height: 100vh;
     background-color: rgba(84, 44, 29, 0.3);
     backdrop-filter: blur(8px);
+}
+
+.cross-close {
+    transition: 0.45s;
+    &:hover {
+        transform: rotate(180deg);
+        transition: 0.45s;
+    }
 }

@@ -653,10 +653,8 @@ body {
 }
 @media (max-width: 786px) {
   .card-skill {
-    display: flex;
     max-width: 285px;
-    padding: 14px 32px;
-    gap: 16px;
+    height: 60px;
   }
 }
 .card-skill__front, .card-skill__back {
@@ -675,6 +673,14 @@ body {
   padding: 61px 0 58px;
   transform: perspective(600px) rotateY(0deg);
 }
+@media (max-width: 786px) {
+  .card-skill__front {
+    display: flex;
+    padding: 14px 32px;
+    gap: 16px;
+    text-align: center;
+  }
+}
 .card-skill__back {
   background-color: rgba(31, 30, 27, 0.9);
   -webkit-backdrop-filter: blur(7px);
@@ -692,7 +698,6 @@ body {
 .card-skill [data-btn-close] {
   width: 20px;
   height: 20px;
-  background-color: red;
   position: absolute;
   top: 15px;
   right: 15px;
@@ -788,6 +793,7 @@ body {
   z-index: 3;
   max-width: 600px;
   width: 95%;
+  height: 300px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -816,6 +822,14 @@ body {
   background-color: rgba(84, 44, 29, 0.3);
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
+}
+
+.cross-close {
+  transition: 0.45s;
+}
+.cross-close:hover {
+  transform: rotate(180deg);
+  transition: 0.45s;
 }
 
 .my-works {
