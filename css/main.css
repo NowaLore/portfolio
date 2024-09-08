@@ -1014,4 +1014,26 @@ body {
 .list-control__button.active {
   transform: scaleX(1.2);
   background-color: #FF7F50;
+}
+
+.application__content {
+  padding: 64px 0;
+}
+
+.form {
+  background-color: #1F1E1B;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 16px 0;
+}
+
+.form__item {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.form__input {
+  border-bottom: 1px solid #FF7F50;
+  width: 100%;
+  height: 32px;
 }/*# sourceMappingURL=main.css.map */
