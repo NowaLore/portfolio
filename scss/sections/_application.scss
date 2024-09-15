@@ -69,3 +69,17 @@
 
 .form__placeholder {
 }
+
+.form__send {
+    padding: 10px 40px;
+    margin: 0 auto;
+    display: block;
+    color: $colorText;
+    background-color: $contextTitle;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: #e67248b4;
+        transition: 0.4s;
+    }
+}

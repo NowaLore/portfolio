@@ -1085,4 +1085,17 @@ body {
 .form__item input:focus + label::after {
   transform: translateX(0%);
   transition: all 0.45s ease;
+}
+
+.form__send {
+  padding: 10px 40px;
+  margin: 0 auto;
+  display: block;
+  color: #F0E3CA;
+  background-color: #FF7F50;
+  border-radius: 5px;
+}
+.form__send:hover {
+  background-color: rgba(230, 114, 72, 0.7058823529);
+  transition: 0.4s;
 }/*# sourceMappingURL=main.css.map */
