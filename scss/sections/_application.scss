@@ -30,7 +30,9 @@
         overflow: auto;
         height: 100%;
         // Позиционирование мешает увелечению родительского контейнера
-        position: static;__
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 }
 .form__input {
@@ -70,14 +72,14 @@
     bottom: 5px;
     left: 0px;
     transition: all 0.45s ease;
-    color: #95a5a6;
+    color: $placeholderColor;
 }
 
 .form__item .form__input:focus+label span,
 .form__item .form__input:valid+label span {
     transform: translateY(-20px);
     transition: all 0.45s ease;
-    color: #3898db;
+    color: $contextTitle;
 }
 
 .form__item .form__input:focus+label::after,
