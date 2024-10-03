@@ -1032,7 +1032,6 @@ body {
   margin: 0 auto 25px;
   height: 40px;
   position: relative;
-  overflow: hidden;
 }
 .form__item--rules {
   display: flex;
@@ -1053,17 +1052,26 @@ body {
   top: 0;
   left: 0;
 }
+.form__item.focus .form__placeholder {
+  transform: translateY(-150%);
+}
 
 .form__input {
   width: 100%;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-30%);
+  height: 100%;
   color: #F0E3CA;
   font-size: 20px;
   outline: none;
   background-color: transparent;
   border-bottom: 2px solid #FF7F50;
+}
+
+.form__placeholder {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  transition: 0.4s;
 }
 
 .form__send {

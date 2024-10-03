@@ -16,24 +16,24 @@ $(function () {
             email: { required: 'Field cannot be empty', email: 'Format: name@example.com' },
             // message: { required: 'Field cannot be empty' },
         },
-        // submitHandler: ajaxFormSubmit
+        submitHandler: ajaxFormSubmit
     });
 
-    // function ajaxFormSubmit() {
-    //     const string = form.serialize();
+    function ajaxFormSubmit() {
+        const string = form.serialize();
 
-    //     $.ajax({
-    //         type: 'POST',
-    //         url: '../php/mail.php',
-    //         data: string,
-    //         success: function (html) {
-    //             form.slideUp(800);
-    //             answer.html(html);
-    //         }
-    //     });
+        $.ajax({
+            type: 'POST',
+            url: '../php/mail.php',
+            data: string,
+            success: function (html) {
+                form.slideUp(800);
+                answer.html(html);
+            }
+        });
 
-    //     return false;
-    // }
+        return false;
+    }
 
     // function toggleSubmitButton() {
     //     if (form.valid() && checkbox.prop('checked')) {
@@ -48,4 +48,3 @@ $(function () {
 });
 
 // 1. Создаь анимацию плейсхолдеров через js
-// 2. Создать чек бокс
