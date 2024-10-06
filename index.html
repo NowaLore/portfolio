@@ -18,6 +18,7 @@
       <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer="defer"></script>
       <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js" defer="defer"></script>
       <script src="./js/validation.js" defer="defer"></script>
+      <script src="./js/animation-placeholder.js" defer="defer"></script>
    </head>
    <body>
       <svg display = 'none'>
@@ -430,20 +431,20 @@ My Works
                   </h6>
                   <form method="post" action="./php/mail.php" class="form" id="form">
 
-                     <article class="form__item">
-                        <input class="form__input" type="text" name="name" required>
-                        <span class="form__placeholder">Name</span>
+                     <article class="form__item" data-article>
+                        <input class="form__input" type="text" name="name" required data-input>
+                        <span class="form__placeholder" data-placeholder>Name</span>
                      </article>
 
-                     <article class="form__item">
-                        <input class="form__input" type="text" name="email" required>
-                        <span class="form__placeholder">Email</span>
+                     <article class="form__item" data-article>
+                        <input class="form__input" type="text" name="email" required data-input>
+                        <span class="form__placeholder" data-placeholder>Email</span>
                      </article>
 
-                     <!-- <article class="form__item form__item--text">
-                        <textarea name="message" id="message" class="form__input" required minlength="10"></textarea>
+                     <!-- <article class="form__item form__item--text" data-article>
+                        <textarea name="message" id="message" class="form__input" required minlength="10" data-input></textarea>
                         <label for="message">
-                           <span class="form__placeholder">Message</span>
+                           <span class="form__placeholder" data-placeholder>Message</span>
                         </label>
                      </article> -->
 

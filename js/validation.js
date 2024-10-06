@@ -47,4 +47,4 @@ $(function () {
     // form.on('keyup change', 'input, textarea', toggleSubmitButton);
 });
 
-// 1. Создаь анимацию плейсхолдеров через js
+// 1. Создать анимацию плейсхолдеров через js
