@@ -1093,12 +1093,15 @@ textarea::-webkit-resizer {
   margin: 0 auto;
   display: block;
   color: #F0E3CA;
-  background-color: #FF7F50;
+  background-color: #58534d;
   border-radius: 5px;
-}
-.form__send:hover {
-  background-color: rgba(230, 114, 72, 0.7058823529);
   transition: 0.4s;
+}
+.form__send.active {
+  background-color: #FF7F50;
+}
+.form__send.active:hover {
+  background-color: rgba(230, 114, 72, 0.7058823529);
 }
 
 .custom-checkbox {
@@ -1145,4 +1148,9 @@ textarea::-webkit-resizer {
   text-decoration: underline !important;
   color: #FF7F50;
   text-underline-offset: 4px;
+}
+
+.error {
+  font-size: 14px;
+  color: rgb(135, 3, 3);
 }/*# sourceMappingURL=main.css.map */

@@ -1,20 +1,20 @@
 $(function () {
     const form = $('#form');
-    // const answer = $('#answer');
-    // const checkbox = $('#checkbox');
-    // const btnSubmit = $('#submit');
+    const answer = $('#answer');
+    const checkbox = $('#checkbox');
+    const btnSubmit = $('#submit');
 
     form.validate({
         // wrapper: "li",
         rules: {
             name: { required: true },
             email: { required: true, email: true },
-            // message: { required: true },
+            message: { required: true },
         },
         messages: {
             name: { required: 'Field cannot be empty' },
             email: { required: 'Field cannot be empty', email: 'Format: name@example.com' },
-            // message: { required: 'Field cannot be empty' },
+            message: { required: 'Field cannot be empty' },
         },
         submitHandler: ajaxFormSubmit
     });
@@ -35,16 +35,14 @@ $(function () {
         return false;
     }
 
-    // function toggleSubmitButton() {
-    //     if (form.valid() && checkbox.prop('checked')) {
-    //         btnSubmit.removeClass('disabled').removeAttr('disabled');
-    //     } else {
-    //         btnSubmit.attr('disabled', 'disabled').addClass('disabled');
-    //     }
-    // }
+    function toggleSubmitButton() {
+        if (form.valid() && checkbox.prop('checked')) {
+            btnSubmit.addClass('active').removeAttr('disabled');
+        } else {
+            btnSubmit.attr('disabled', 'disabled').removeClass('active');
+        }
+    }
 
-    // checkbox.on('change', toggleSubmitButton);
-    // form.on('keyup change', 'input, textarea', toggleSubmitButton);
+    checkbox.on('change', toggleSubmitButton);
+    form.on('keyup change', 'input, textarea', toggleSubmitButton);
 });
-
-// 1. Создать анимацию плейсхолдеров через js
