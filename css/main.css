@@ -1066,6 +1066,19 @@ body {
   background-color: transparent;
   border-bottom: 2px solid #FF7F50;
 }
+.form__input--scrollbar {
+  overflow: auto;
+  scrollbar-color: #d96c44 #1e1d1c;
+  scrollbar-width: thin;
+}
+
+textarea::-webkit-resizer {
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: url(../../img/icons/ugol.svg) no-repeat center;
+  background-size: 90%;
+}
 
 .form__placeholder {
   position: absolute;
