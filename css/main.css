@@ -653,6 +653,7 @@ body {
 @media (max-width: 786px) {
   .card-skill {
     max-width: 285px;
+    width: 100%;
     height: 60px;
   }
 }
@@ -1146,6 +1147,11 @@ textarea::-webkit-resizer {
   transform: translate(-50%, -50%) scale(1);
 }
 
+.rules {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 .rules__link {
   text-decoration: underline !important;
   color: #FF7F50;
@@ -1155,4 +1161,11 @@ textarea::-webkit-resizer {
 .error {
   font-size: 14px;
   color: rgb(135, 3, 3);
+}
+
+.success {
+  color: #FF7F50;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
