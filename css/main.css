@@ -162,9 +162,8 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-  border-bottom: 1px solid #8f8d8d;
-  -webkit-text-fill-color: #161616;
-  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+  -webkit-text-fill-color: #d8d8d8;
+  -webkit-box-shadow: 0 0 0px 1000px #1F1E1B inset;
   -webkit-transition: background-color 5000s ease-in-out 0s;
   transition: background-color 5000s ease-in-out 0s;
 }
@@ -1070,6 +1069,9 @@ body {
   overflow: auto;
   scrollbar-color: #d96c44 #1e1d1c;
   scrollbar-width: thin;
+}
+.form__input input:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px rgba(101, 51, 33, 0.7058823529) inset;
 }
 
 textarea::-webkit-resizer {

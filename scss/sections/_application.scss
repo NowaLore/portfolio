@@ -61,6 +61,10 @@
         scrollbar-width: thin;
     }
 
+    input:-webkit-autofill {
+        box-shadow: 0 0 0px 1000px #653321b4 inset;
+    }
+
 }
 textarea::-webkit-resizer  {
     width: 20px;
@@ -153,4 +157,11 @@ textarea::-webkit-resizer  {
 .error {
     font-size: 14px;
     color: rgb(135, 3, 3);
+}
+
+.success {
+    color: $contextTitle;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
 }
