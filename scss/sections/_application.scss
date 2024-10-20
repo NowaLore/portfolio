@@ -1,0 +1,168 @@
+.application {
+}
+.application__content {
+    padding: 64px 0;
+}
+.form {
+    background-color: $backgroundCards;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 16px 0;
+}
+.form__item {
+    width: 90%;
+    margin: 0 auto 25px;
+    height: 40px;
+    position: relative;
+
+    &--rules {
+        display: flex;
+        gap: 8px;
+    }
+
+    &--text {
+        min-height: 40px;
+        height: auto;
+        padding-bottom: 10px;
+
+        .form__placeholder {
+            top: 12px;
+            transform: none;
+        }
+    }
+
+    &--text .form__input {
+        resize: vertical;
+        max-height: 350px;
+        min-height: 40px;
+        overflow: auto;
+        height: 100%;
+
+    }
+
+    &.focus {
+        .form__placeholder {
+            transform: translateY(-150%);
+        }
+    }
+}
+.form__input {
+    width: 100%;
+    height: 100%;
+    color: $colorText;
+    font-size: 20px;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 2px solid $contextTitle;
+
+    &--scrollbar {
+        overflow: auto;
+        scrollbar-color: #d96c44 #1e1d1c;
+        scrollbar-width: thin;
+    }
+
+    input:-webkit-autofill {
+        box-shadow: 0 0 0px 1000px #653321b4 inset;
+    }
+
+}
+textarea::-webkit-resizer  {
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url(../../img/icons/ugol.svg) no-repeat center;
+    background-size: 90%;
+}
+
+.form__placeholder {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    transition: 0.4s;
+}
+
+.form__send {
+    padding: 10px 40px;
+    margin: 0 auto;
+    display: block;
+    color: $colorText;
+    background-color: #58534d;
+    border-radius: 5px;
+    transition: 0.4s;
+
+
+    &.active {
+        background-color: $contextTitle;
+
+        &:hover {
+            background-color:#e67248b4;
+        }
+    }
+}
+
+.custom-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: $seemoreColor;
+    border-radius: 4px;
+
+    &::before {
+        content: '';
+        
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        background-image: url("../img/icons/check.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        transition: 0.4s ease-in;
+    }
+}
+
+.real-checkbox {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.real-checkbox:focus + .custom-checkbox {
+    box-shadow: 0px, 0px, 0px, 1px #38577a, 0px 0px 10px #7e9bbd;
+}
+
+
+.real-checkbox:checked + .custom-checkbox::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.rules {
+    font-size: 14px;
+    line-height: 1.5;
+}
+.rules__link {
+    text-decoration: underline !important;
+    color: $contextTitle;
+    text-underline-offset: 4px;
+}
+
+.error {
+    font-size: 14px;
+    color: rgb(135, 3, 3);
+}
+
+.success {
+    color: $contextTitle;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}

@@ -12,9 +12,6 @@
         display: inline-block;
         margin-bottom: 16px;
         max-width: 166px;
-        // @media(max-width:768px) {
-            // margin: 0 auto;
-        // }
     }
 }
 
@@ -43,15 +40,13 @@
         text-align: left;
     }
 }
-.contacts {
-}
+
 .contacts-list {
     display: flex;
-    column-gap: 48px;
+    gap: 12px;
+    flex-direction: column;
 }
-.contacts-list__item {
 
-}
 .contact-link {
     display: flex;
     align-items: center;
@@ -71,11 +66,3 @@
     font-weight: 400;
     transition: 0.45s;
 }
-.contacts-list__wrapper-item {
-}
-.contacts-sublist {
-    .contacts-list__item:not(:last-child) {
-        margin-bottom: 32px;
-    }
-}
-

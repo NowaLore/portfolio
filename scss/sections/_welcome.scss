@@ -24,13 +24,19 @@
     
     .main-title{
         margin-bottom: 13.5px;
+
         @media(max-width:1100px) {
             margin-bottom: 9px;
+        }
+
+        @media (max-width: 768px) {
+            margin-bottom: 16px;
         }
     }
 
     .main-subtitle{
         margin-bottom: 14.5px;
+
         @media(max-width: 1100px) {
             margin-bottom: 17px;
         }
@@ -41,15 +47,42 @@
     font-weight: 900;
     color: $contextTitle;
     text-transform: capitalize;
+
+    @media (max-width: 768px) {
+        font-size: 40px;
+    }
+
+    @media (max-width: 460px) {
+        font-size: 30px;
+        text-align: center;
+    }
 }
 .main-subtitle {
     font-size: 40px;
     font-weight: 600;
     text-transform: capitalize;
+
+    @media (max-width: 768px) {
+        font-size: 32px;
+    }
+
+    @media (max-width: 460px) {
+        font-size: 24px;
+        text-align: center;
+    }
 }
 .hero__description {
     font-size: 20px;
     font-weight: 400;
+
+    @media (max-width: 768px) {
+        font-size: 24px;
+    }
+
+    @media (max-width: 460px) {
+        font-size: 18px;
+        text-align: center;
+    }
 }
 .hero__description-text {
     &:not(:last-child){
@@ -61,11 +94,19 @@
     width: 630px;
     height: 575px;
     position: relative;
+    background-image: url(../img/welcome/bg-avatar-desktop.png);
+    background-repeat: no-repeat;
 
-    &__code {
-        width: auto;
-        height: auto;
-        object-fit: contain;
+    @media (max-width: 768px) {
+    background-image: url(../img/mobile-code.png);
+    width: 413px;
+    height: 430px;
+    }
+
+    @media (max-width: 460px) {
+    width: 290px;
+    height: 320px;
+    background-size: contain;
     }
 }
 
@@ -77,6 +118,16 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+
+    @media (max-width: 768px) {
+    width: 278px;
+    height: 276px;
+    }
+
+    @media (max-width: 460px) {
+    width: 190px;
+    height: 190px;
+    }
 }
 .avatar-part--img {
     overflow: hidden;
